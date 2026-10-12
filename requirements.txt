@@ -5,6 +5,7 @@ pandas>=2.0.0
 numpy>=1.24.0
 scikit-learn>=1.3.0
 boto3>=1.28.0
-from flask import flask
+flask
+gunicorn
 import streamlit as st
 from fastapi import FastAPI
