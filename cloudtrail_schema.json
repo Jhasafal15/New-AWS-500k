@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CloudTrailEvent",
+  "type": "object",
+  "required": ["eventVersion", "eventTime", "eventSource", "eventName", "awsRegion", "sourceIPAddress", "userAgent", "userIdentity"],
+  "properties": {
+    "eventVersion": { "type": "string" },
+    "eventId": { "type": "string" },
+    "eventTime": { "type": "string" },
+    "eventSource": { "type": "string" },
+    "eventName": { "type": "string" },
+    "awsRegion": { "type": "string" },
+    "sourceIPAddress": { "type": "string" },
+    "userAgent": { "type": "string" },
+    "userIdentity": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "principalId": { "type": "string" },
+        "arn": { "type": "string" },
+        "accountId": { "type": "string" },
+        "userName": { "type": "string" }
+      }
+    },
+    "requestParameters": { "type": ["object", "null"] },
+    "responseElements": { "type": ["object", "null"] },
+    "errorCode": { "type": ["string", "null"] },
+    "errorMessage": { "type": ["string", "null"] }
+  }
+}

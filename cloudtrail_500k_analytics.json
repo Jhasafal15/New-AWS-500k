@@ -1,0 +1,50 @@
+{
+  "dataset_file": "synthetic_cloudtrail_500k.jsonl",
+  "total_events_analyzed": 500000,
+  "processing_time_seconds": 5.66,
+  "throughput_events_per_sec": 88394,
+  "risk_distribution": {
+    "LOW": 461609,
+    "CRITICAL": 5203,
+    "MEDIUM": 30498,
+    "HIGH": 2690
+  },
+  "attack_scenarios": {
+    "NORMAL_BEHAVIOR": 422002,
+    "OFF_HOURS_ANOMALY": 12000,
+    "FAILED_SENSITIVE_OPERATION": 3000,
+    "RECONNAISSANCE": 12000,
+    "SERVICE_DISCOVERY": 7998,
+    "CREDENTIAL_ACTIVITY": 3000,
+    "SERVICE_ACTIVITY": 20000,
+    "SENSITIVE_IAM": 6000,
+    "MFA_ANOMALY": 8000,
+    "PRIVILEGE_ESCALATION": 4000,
+    "COMPOUND_ATTACK_CHAIN": 2000
+  },
+  "top_targeted_services": {
+    "ec2.amazonaws.com": 181587,
+    "iam.amazonaws.com": 96466,
+    "autoscaling.amazonaws.com": 52221,
+    "sts.amazonaws.com": 52062,
+    "s3.amazonaws.com": 46104,
+    "glue.amazonaws.com": 28491,
+    "cloudtrail.amazonaws.com": 16047,
+    "resource-explorer-2.amazonaws.com": 11891,
+    "emr.amazonaws.com": 8810,
+    "rds.amazonaws.com": 6321
+  },
+  "top_active_users": {
+    "dev-backend-user": 56814,
+    "dev-lead-user": 53744,
+    "ci-cd-deploy-role": 51432,
+    "ops-infra-user": 50630,
+    "sec-analyst-alice": 49240,
+    "dev-frontend-user": 47763,
+    "sec-compliance-auditor": 47168,
+    "monitoring-agent-role": 46965,
+    "ops-platform-admin": 46732,
+    "compromised-contractor": 21203
+  },
+  "curated_sample_count": 500
+}

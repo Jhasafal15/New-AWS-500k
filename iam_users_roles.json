@@ -1,0 +1,1642 @@
+[
+  {
+    "resource_id": "AIDAHBVRPOIVGRVI",
+    "arn": "arn:aws:iam::123456789012:user/admin_dev",
+    "name": "admin_dev",
+    "type": "USER",
+    "created_at": "2025-06-02T04:01:54+00:00",
+    "last_login": "2026-09-01T12:57:10+00:00",
+    "password_last_used": "2026-09-26T15:38:55+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIABCBFNOGMBJMT",
+        "status": "Active",
+        "created_at": "2025-06-02T04:01:54+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "FullAdminAccessPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Role": "Senior Cloud Architect",
+      "Owner": "admin_dev"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": true
+    }
+  },
+  {
+    "resource_id": "AIDASIAOCLRZAWZK",
+    "arn": "arn:aws:iam::123456789012:user/secops_lead",
+    "name": "secops_lead",
+    "type": "USER",
+    "created_at": "2025-06-06T05:30:14+00:00",
+    "last_login": "2026-09-17T20:02:36+00:00",
+    "password_last_used": "2026-09-20T13:52:20+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIARJNWVGFYGWWM",
+        "status": "Active",
+        "created_at": "2025-06-06T05:30:14+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "FullAdminAccessPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Role": "Security Operations Lead",
+      "Owner": "secops_lead"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false
+    }
+  },
+  {
+    "resource_id": "AIDAZCUDIHYFJSON",
+    "arn": "arn:aws:iam::123456789012:user/infra_deployer",
+    "name": "infra_deployer",
+    "type": "USER",
+    "created_at": "2025-01-07T13:39:18+00:00",
+    "last_login": "2026-09-14T20:59:50+00:00",
+    "password_last_used": "2026-09-26T07:59:38+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAMTECQOXSFOGY",
+        "status": "Active",
+        "created_at": "2025-01-07T13:39:18+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "FullAdminAccessPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Role": "Deployment Automation Account",
+      "Owner": "infra_deployer"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": true
+    }
+  },
+  {
+    "resource_id": "AIDADOXKXWNQRSRP",
+    "arn": "arn:aws:iam::123456789012:user/root_backup",
+    "name": "root_backup",
+    "type": "USER",
+    "created_at": "2025-01-12T19:02:37+00:00",
+    "last_login": "2026-08-31T18:51:06+00:00",
+    "password_last_used": "2026-09-27T02:30:23+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAOKIUPKDYROSJ",
+        "status": "Active",
+        "created_at": "2025-01-12T19:02:37+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "FullAdminAccessPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Role": "Emergency Break-glass Account",
+      "Owner": "root_backup"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": true
+    }
+  },
+  {
+    "resource_id": "AIDARUXXDOCZUZRE",
+    "arn": "arn:aws:iam::123456789012:user/cloud_governance",
+    "name": "cloud_governance",
+    "type": "USER",
+    "created_at": "2024-12-21T03:06:13+00:00",
+    "last_login": "2026-09-07T13:28:29+00:00",
+    "password_last_used": "2026-09-26T02:04:05+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIATUNPFZPDJQIP",
+        "status": "Active",
+        "created_at": "2024-12-21T03:06:13+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "FullAdminAccessPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Role": "Cloud Governance Lead",
+      "Owner": "cloud_governance"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false
+    }
+  },
+  {
+    "resource_id": "AIDAXOIGFFWDHJOK",
+    "arn": "arn:aws:iam::123456789012:user/julie69",
+    "name": "julie69",
+    "type": "USER",
+    "created_at": "2025-06-09T01:06:43+00:00",
+    "last_login": "2025-06-19T01:06:43+00:00",
+    "password_last_used": "2025-06-19T01:06:43+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAYRBMEYYMDHQJ",
+        "status": "Inactive",
+        "created_at": "2025-06-09T01:06:43+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": true,
+      "inactive_credentials": true
+    }
+  },
+  {
+    "resource_id": "AIDAXPVHSBKDAUUQ",
+    "arn": "arn:aws:iam::123456789012:user/frazierdanny",
+    "name": "frazierdanny",
+    "type": "USER",
+    "created_at": "2026-01-08T18:05:12+00:00",
+    "last_login": "2026-09-10T06:32:08+00:00",
+    "password_last_used": "2026-09-10T06:32:08+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAGWLGGOTOGMMJ",
+        "status": "Active",
+        "created_at": "2026-01-08T18:05:12+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAUFBHXZTPDPKF",
+    "arn": "arn:aws:iam::123456789012:user/kathryn88",
+    "name": "kathryn88",
+    "type": "USER",
+    "created_at": "2023-09-28T11:42:13+00:00",
+    "last_login": "2026-09-26T09:28:58+00:00",
+    "password_last_used": "2026-09-26T09:28:58+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAFUFEWIXIIQEJ",
+        "status": "Active",
+        "created_at": "2023-09-28T11:42:13+00:00"
+      }
+    ],
+    "attached_policies": [
+      "CloudWatchReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAIWUSMTTZQPXC",
+    "arn": "arn:aws:iam::123456789012:user/josephbrennan",
+    "name": "josephbrennan",
+    "type": "USER",
+    "created_at": "2025-07-15T22:06:27+00:00",
+    "last_login": "2026-09-07T14:25:29+00:00",
+    "password_last_used": "2026-09-07T14:25:29+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAHCHPOEVBLJOL",
+        "status": "Active",
+        "created_at": "2025-07-15T22:06:27+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonEC2ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAECVEGPRQFNII",
+    "arn": "arn:aws:iam::123456789012:user/adrianzimmerman",
+    "name": "adrianzimmerman",
+    "type": "USER",
+    "created_at": "2023-12-28T01:21:18+00:00",
+    "last_login": "2026-09-08T10:23:54+00:00",
+    "password_last_used": "2026-09-08T10:23:54+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAUKKEPYEZAMGG",
+        "status": "Active",
+        "created_at": "2023-12-28T01:21:18+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDARPPGDZUVZGPM",
+    "arn": "arn:aws:iam::123456789012:user/agomez",
+    "name": "agomez",
+    "type": "USER",
+    "created_at": "2025-09-22T02:19:24+00:00",
+    "last_login": "2026-08-30T22:46:33+00:00",
+    "password_last_used": "2026-08-30T22:46:33+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAMICIBLRDPECZ",
+        "status": "Active",
+        "created_at": "2025-09-22T02:19:24+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAWPKAFENZDKYA",
+    "arn": "arn:aws:iam::123456789012:user/williamsyvette",
+    "name": "williamsyvette",
+    "type": "USER",
+    "created_at": "2023-10-20T12:35:40+00:00",
+    "last_login": "2026-09-01T20:19:15+00:00",
+    "password_last_used": "2026-09-01T20:19:15+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAYQYYDSBSUYJQ",
+        "status": "Active",
+        "created_at": "2023-10-20T12:35:40+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDADLVIDVUDDLEG",
+    "arn": "arn:aws:iam::123456789012:user/smoore",
+    "name": "smoore",
+    "type": "USER",
+    "created_at": "2024-08-30T18:51:34+00:00",
+    "last_login": "2024-09-09T18:51:34+00:00",
+    "password_last_used": "2024-09-09T18:51:34+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAHKDGFLEMERPZ",
+        "status": "Inactive",
+        "created_at": "2024-08-30T18:51:34+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AWSLambda_ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": true
+    }
+  },
+  {
+    "resource_id": "AIDACNFAQLKHUQNQ",
+    "arn": "arn:aws:iam::123456789012:user/davidashley",
+    "name": "davidashley",
+    "type": "USER",
+    "created_at": "2026-03-14T22:02:55+00:00",
+    "last_login": "2026-09-26T04:19:37+00:00",
+    "password_last_used": "2026-09-26T04:19:37+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIATUPQZIQPTDUW",
+        "status": "Active",
+        "created_at": "2026-03-14T22:02:55+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAEINGQIWEPXSK",
+    "arn": "arn:aws:iam::123456789012:user/smithchristine",
+    "name": "smithchristine",
+    "type": "USER",
+    "created_at": "2026-02-18T04:18:22+00:00",
+    "last_login": "2026-09-02T04:08:54+00:00",
+    "password_last_used": "2026-09-02T04:08:54+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIACITTNZPHAQJT",
+        "status": "Active",
+        "created_at": "2026-02-18T04:18:22+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonEC2ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAVJJRSMNTVNRO",
+    "arn": "arn:aws:iam::123456789012:user/mcmillandennis",
+    "name": "mcmillandennis",
+    "type": "USER",
+    "created_at": "2024-03-24T21:52:28+00:00",
+    "last_login": "2026-09-02T12:22:04+00:00",
+    "password_last_used": "2026-09-02T12:22:04+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAQGFQDFOBRCAV",
+        "status": "Active",
+        "created_at": "2024-03-24T21:52:28+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDATBJAHESJICXL",
+    "arn": "arn:aws:iam::123456789012:user/danagreen",
+    "name": "danagreen",
+    "type": "USER",
+    "created_at": "2025-08-13T23:12:13+00:00",
+    "last_login": "2026-09-24T02:24:58+00:00",
+    "password_last_used": "2026-09-24T02:24:58+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAJJBICTXYCWNR",
+        "status": "Active",
+        "created_at": "2025-08-13T23:12:13+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDANVJPKZZLABLV",
+    "arn": "arn:aws:iam::123456789012:user/elizabethgomez",
+    "name": "elizabethgomez",
+    "type": "USER",
+    "created_at": "2026-02-13T08:21:08+00:00",
+    "last_login": "2026-09-17T01:07:33+00:00",
+    "password_last_used": "2026-09-17T01:07:33+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAVYAZQVZPRKYS",
+        "status": "Active",
+        "created_at": "2026-02-13T08:21:08+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonEC2ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAMDWTYOOBQMZV",
+    "arn": "arn:aws:iam::123456789012:user/reyesbenjamin",
+    "name": "reyesbenjamin",
+    "type": "USER",
+    "created_at": "2025-09-27T18:58:40+00:00",
+    "last_login": "2026-09-08T02:48:57+00:00",
+    "password_last_used": "2026-09-08T02:48:57+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAREXRWPGZRIVB",
+        "status": "Active",
+        "created_at": "2025-09-27T18:58:40+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AWSLambda_ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAQCGMBWUYUBMG",
+    "arn": "arn:aws:iam::123456789012:user/wileyjose",
+    "name": "wileyjose",
+    "type": "USER",
+    "created_at": "2026-03-17T12:20:09+00:00",
+    "last_login": "2026-03-27T12:20:09+00:00",
+    "password_last_used": "2026-03-27T12:20:09+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAHYKMQCTBAHZI",
+        "status": "Inactive",
+        "created_at": "2026-03-17T12:20:09+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AWSLambda_ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": true
+    }
+  },
+  {
+    "resource_id": "AIDANUQHUTGTQAUZ",
+    "arn": "arn:aws:iam::123456789012:user/michaeljones",
+    "name": "michaeljones",
+    "type": "USER",
+    "created_at": "2026-07-25T10:57:27+00:00",
+    "last_login": "2026-09-13T08:22:22+00:00",
+    "password_last_used": "2026-09-13T08:22:22+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIASSJIMAQYRVLN",
+        "status": "Active",
+        "created_at": "2026-07-25T10:57:27+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDABYLMPUDCCRNG",
+    "arn": "arn:aws:iam::123456789012:user/richard04",
+    "name": "richard04",
+    "type": "USER",
+    "created_at": "2024-12-16T07:18:02+00:00",
+    "last_login": "2026-09-07T12:32:33+00:00",
+    "password_last_used": "2026-09-07T12:32:33+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAEYYVKQFSGQON",
+        "status": "Active",
+        "created_at": "2024-12-16T07:18:02+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAJBCPENXEDAOK",
+    "arn": "arn:aws:iam::123456789012:user/clarence34",
+    "name": "clarence34",
+    "type": "USER",
+    "created_at": "2024-09-10T13:35:34+00:00",
+    "last_login": "2026-09-06T23:39:54+00:00",
+    "password_last_used": "2026-09-06T23:39:54+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAMTSYFZPJPSAW",
+        "status": "Active",
+        "created_at": "2024-09-10T13:35:34+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AWSLambda_ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDADDJPHDIZDQHJ",
+    "arn": "arn:aws:iam::123456789012:user/osbornejeffery",
+    "name": "osbornejeffery",
+    "type": "USER",
+    "created_at": "2026-09-12T15:51:12+00:00",
+    "last_login": "2026-09-22T11:07:35+00:00",
+    "password_last_used": "2026-09-22T11:07:35+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAMUWCNUGBJCKV",
+        "status": "Active",
+        "created_at": "2026-09-12T15:51:12+00:00"
+      }
+    ],
+    "attached_policies": [
+      "CloudWatchReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAXXHFOPRCETSP",
+    "arn": "arn:aws:iam::123456789012:user/wcole",
+    "name": "wcole",
+    "type": "USER",
+    "created_at": "2024-10-15T16:08:50+00:00",
+    "last_login": "2026-09-10T18:45:11+00:00",
+    "password_last_used": "2026-09-10T18:45:11+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIARVUIFIJOYSJT",
+        "status": "Active",
+        "created_at": "2024-10-15T16:08:50+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonEC2ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAADNAYXLSBWKY",
+    "arn": "arn:aws:iam::123456789012:user/calebrussell",
+    "name": "calebrussell",
+    "type": "USER",
+    "created_at": "2026-01-17T12:23:29+00:00",
+    "last_login": "2026-09-19T22:30:11+00:00",
+    "password_last_used": "2026-09-19T22:30:11+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAEAWTWYAIVVIZ",
+        "status": "Active",
+        "created_at": "2026-01-17T12:23:29+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDABYVQRZZUKDIN",
+    "arn": "arn:aws:iam::123456789012:user/tracynelson",
+    "name": "tracynelson",
+    "type": "USER",
+    "created_at": "2025-10-21T00:25:40+00:00",
+    "last_login": "2025-10-31T00:25:40+00:00",
+    "password_last_used": "2025-10-31T00:25:40+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAIBZLKQBFPBID",
+        "status": "Inactive",
+        "created_at": "2025-10-21T00:25:40+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": true
+    }
+  },
+  {
+    "resource_id": "AIDAUVWYRWAQFEBV",
+    "arn": "arn:aws:iam::123456789012:user/brentgray",
+    "name": "brentgray",
+    "type": "USER",
+    "created_at": "2024-08-21T09:38:57+00:00",
+    "last_login": "2026-09-19T09:25:30+00:00",
+    "password_last_used": "2026-09-19T09:25:30+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAIDWOPEXPCWBP",
+        "status": "Active",
+        "created_at": "2024-08-21T09:38:57+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAEQHKNDSQXXKM",
+    "arn": "arn:aws:iam::123456789012:user/maryhowell",
+    "name": "maryhowell",
+    "type": "USER",
+    "created_at": "2024-10-02T03:58:55+00:00",
+    "last_login": "2026-09-03T10:43:12+00:00",
+    "password_last_used": "2026-09-03T10:43:12+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAMVTHXKTGLBTK",
+        "status": "Active",
+        "created_at": "2024-10-02T03:58:55+00:00"
+      }
+    ],
+    "attached_policies": [
+      "CloudWatchReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDALSOPGSXTRMZH",
+    "arn": "arn:aws:iam::123456789012:user/tsanders",
+    "name": "tsanders",
+    "type": "USER",
+    "created_at": "2024-07-31T16:39:07+00:00",
+    "last_login": "2026-09-01T00:12:15+00:00",
+    "password_last_used": "2026-09-01T00:12:15+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAYKYCWIBQXEGP",
+        "status": "Active",
+        "created_at": "2024-07-31T16:39:07+00:00"
+      }
+    ],
+    "attached_policies": [
+      "CloudWatchReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Development",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAXODTJBLUHPRN",
+    "arn": "arn:aws:iam::123456789012:user/alexander67",
+    "name": "alexander67",
+    "type": "USER",
+    "created_at": "2024-03-09T13:09:22+00:00",
+    "last_login": "2026-09-18T08:45:11+00:00",
+    "password_last_used": "2026-09-18T08:45:11+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAZIXEDBULRUPF",
+        "status": "Active",
+        "created_at": "2024-03-09T13:09:22+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AdministratorAccess",
+      "PowerUserAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "WildcardCustomPolicy",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAQYVBFULFNWZQ",
+    "arn": "arn:aws:iam::123456789012:user/nicole37",
+    "name": "nicole37",
+    "type": "USER",
+    "created_at": "2026-02-28T19:54:59+00:00",
+    "last_login": "2026-09-26T22:44:59+00:00",
+    "password_last_used": "2026-09-26T22:44:59+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAVRMSRJAHMFPU",
+        "status": "Active",
+        "created_at": "2026-02-28T19:54:59+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AWSLambda_ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAPTFCYBFSOZSP",
+    "arn": "arn:aws:iam::123456789012:user/wfreeman",
+    "name": "wfreeman",
+    "type": "USER",
+    "created_at": "2024-10-04T22:18:27+00:00",
+    "last_login": "2026-09-20T10:21:02+00:00",
+    "password_last_used": "2026-09-20T10:21:02+00:00",
+    "mfa_active": false,
+    "access_keys": [
+      {
+        "access_key_id": "AKIATQLXEJHWBVJV",
+        "status": "Active",
+        "created_at": "2024-10-04T22:18:27+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": true,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AIDAOHUMUHVIWSLM",
+    "arn": "arn:aws:iam::123456789012:user/jacqueline44",
+    "name": "jacqueline44",
+    "type": "USER",
+    "created_at": "2024-10-22T03:23:25+00:00",
+    "last_login": "2024-11-01T03:23:25+00:00",
+    "password_last_used": "2024-11-01T03:23:25+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIANVERULWHMSGM",
+        "status": "Inactive",
+        "created_at": "2024-10-22T03:23:25+00:00"
+      }
+    ],
+    "attached_policies": [
+      "AmazonS3ReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": true
+    }
+  },
+  {
+    "resource_id": "AIDAIRCDJSSIOWFG",
+    "arn": "arn:aws:iam::123456789012:user/jeremy24",
+    "name": "jeremy24",
+    "type": "USER",
+    "created_at": "2023-10-19T13:52:16+00:00",
+    "last_login": "2026-09-23T05:58:27+00:00",
+    "password_last_used": "2026-09-23T05:58:27+00:00",
+    "mfa_active": true,
+    "access_keys": [
+      {
+        "access_key_id": "AKIAAKSEECVLDQEH",
+        "status": "Active",
+        "created_at": "2023-10-19T13:52:16+00:00"
+      }
+    ],
+    "attached_policies": [
+      "CloudWatchReadOnlyAccess"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "QA",
+      "Department": "Engineering"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAEZFEKORDJJZK",
+    "arn": "arn:aws:iam::123456789012:role/role_term_audit",
+    "name": "role_term_audit",
+    "type": "ROLE",
+    "created_at": "2025-05-20T20:02:47+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "AssumeRoleBroadAccess",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAPHJWAMMYNOXH",
+    "arn": "arn:aws:iam::123456789012:role/role_bed_lambda",
+    "name": "role_bed_lambda",
+    "type": "ROLE",
+    "created_at": "2025-07-19T06:54:08+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonEC2ContainerServiceRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROACTLBTKNDNVGW",
+    "arn": "arn:aws:iam::123456789012:role/role_little_app",
+    "name": "role_little_app",
+    "type": "ROLE",
+    "created_at": "2025-03-07T05:35:21+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonEC2ContainerServiceRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROANQQFKPLJEKAA",
+    "arn": "arn:aws:iam::123456789012:role/role_process_cicd",
+    "name": "role_process_cicd",
+    "type": "ROLE",
+    "created_at": "2025-09-11T18:08:22+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "AssumeRoleBroadAccess",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAMESCOSTSSDER",
+    "arn": "arn:aws:iam::123456789012:role/role_risk_cicd",
+    "name": "role_risk_cicd",
+    "type": "ROLE",
+    "created_at": "2025-03-27T03:28:37+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonEC2ContainerServiceRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAQYYOLQZMBHIO",
+    "arn": "arn:aws:iam::123456789012:role/role_window_app",
+    "name": "role_window_app",
+    "type": "ROLE",
+    "created_at": "2026-02-11T20:55:41+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonSSMManagedInstanceCore"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROARJEDKYTMVKSC",
+    "arn": "arn:aws:iam::123456789012:role/role_church_cicd",
+    "name": "role_church_cicd",
+    "type": "ROLE",
+    "created_at": "2025-01-01T10:15:43+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "AssumeRoleBroadAccess",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROASTSZRGIFCFMC",
+    "arn": "arn:aws:iam::123456789012:role/role_management_app",
+    "name": "role_management_app",
+    "type": "ROLE",
+    "created_at": "2026-08-18T16:11:10+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AWSLambdaBasicExecutionRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAVUMQBFORKLBW",
+    "arn": "arn:aws:iam::123456789012:role/role_lay_backup",
+    "name": "role_lay_backup",
+    "type": "ROLE",
+    "created_at": "2026-03-03T00:22:44+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonSSMManagedInstanceCore"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROARKCWWLEHPCRL",
+    "arn": "arn:aws:iam::123456789012:role/role_term_backup",
+    "name": "role_term_backup",
+    "type": "ROLE",
+    "created_at": "2025-12-25T11:28:37+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "AssumeRoleBroadAccess",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAOFFEWAVUQGKV",
+    "arn": "arn:aws:iam::123456789012:role/role_least_lambda",
+    "name": "role_least_lambda",
+    "type": "ROLE",
+    "created_at": "2025-08-12T13:45:45+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AWSLambdaBasicExecutionRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAFSQZWJCDFUQU",
+    "arn": "arn:aws:iam::123456789012:role/role_rule_lambda",
+    "name": "role_rule_lambda",
+    "type": "ROLE",
+    "created_at": "2024-12-25T21:04:37+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonSSMManagedInstanceCore"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAZGAQIDADMHXN",
+    "arn": "arn:aws:iam::123456789012:role/role_spring_app",
+    "name": "role_spring_app",
+    "type": "ROLE",
+    "created_at": "2026-05-07T09:15:51+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AdministratorAccess"
+    ],
+    "inline_policies": [
+      {
+        "policy_name": "AssumeRoleBroadAccess",
+        "policy_document": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": "*",
+              "Resource": "*"
+            }
+          ]
+        }
+      }
+    ],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": true,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAOCWDNRJISCSF",
+    "arn": "arn:aws:iam::123456789012:role/role_moment_lambda",
+    "name": "role_moment_lambda",
+    "type": "ROLE",
+    "created_at": "2024-12-30T03:41:17+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonEC2ContainerServiceRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Staging",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  },
+  {
+    "resource_id": "AROAOMZPTKTJAJAF",
+    "arn": "arn:aws:iam::123456789012:role/role_air_cicd",
+    "name": "role_air_cicd",
+    "type": "ROLE",
+    "created_at": "2025-03-20T08:51:56+00:00",
+    "last_login": null,
+    "password_last_used": null,
+    "mfa_active": true,
+    "access_keys": [],
+    "attached_policies": [
+      "AmazonEC2ContainerServiceRole"
+    ],
+    "inline_policies": [],
+    "tags": {
+      "Environment": "Production",
+      "Service": "Backend"
+    },
+    "_injected_misconfiguration": {
+      "admin_wildcard": false,
+      "missing_mfa": false,
+      "inactive_credentials": false
+    }
+  }
+]

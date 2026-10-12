@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IAMUserOrRole",
+  "type": "object",
+  "required": ["resource_id", "arn", "name", "type", "created_at", "mfa_active", "attached_policies", "inline_policies"],
+  "properties": {
+    "resource_id": { "type": "string" },
+    "arn": { "type": "string" },
+    "name": { "type": "string" },
+    "type": { "type": "string", "enum": ["USER", "ROLE"] },
+    "created_at": { "type": "string" },
+    "last_login": { "type": ["string", "null"] },
+    "password_last_used": { "type": ["string", "null"] },
+    "mfa_active": { "type": "boolean" },
+    "access_keys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "access_key_id": { "type": "string" },
+          "status": { "type": "string", "enum": ["Active", "Inactive"] },
+          "created_at": { "type": "string" }
+        }
+      }
+    },
+    "attached_policies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "inline_policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "policy_name": { "type": "string" },
+          "policy_document": { "type": "object" }
+        }
+      }
+    },
+    "tags": { "type": "object" }
+  }
+}

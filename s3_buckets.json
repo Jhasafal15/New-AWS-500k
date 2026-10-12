@@ -1,0 +1,1160 @@
+[
+  {
+    "bucket_name": "company-customer-pii-records-prod",
+    "arn": "arn:aws:s3:::company-customer-pii-records-prod",
+    "region": "us-west-2",
+    "creation_date": "2024-03-21T20:31:08+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicReadGetObject",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket"
+          ],
+          "Resource": [
+            "arn:aws:s3:::company-customer-pii-records-prod/*",
+            "arn:aws:s3:::company-customer-pii-records-prod"
+          ]
+        }
+      ]
+    },
+    "tags": {
+      "DataClassification": "Confidential",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "company-public-assets-static-web",
+    "arn": "arn:aws:s3:::company-public-assets-static-web",
+    "region": "us-west-2",
+    "creation_date": "2025-09-13T10:24:22+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/d50755d9-a5d0-4d53-9e12-42e3f27292b6",
+    "server_side_encryption_algorithm": "aws:kms",
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicReadGetObject",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket"
+          ],
+          "Resource": [
+            "arn:aws:s3:::company-public-assets-static-web/*",
+            "arn:aws:s3:::company-public-assets-static-web"
+          ]
+        }
+      ]
+    },
+    "tags": {
+      "DataClassification": "Public",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "company-financial-audit-logs-2026",
+    "arn": "arn:aws:s3:::company-financial-audit-logs-2026",
+    "region": "us-west-2",
+    "creation_date": "2024-05-23T18:50:29+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/4ab7706e-b773-40ca-aec2-59dc7f95897c",
+    "server_side_encryption_algorithm": "aws:kms",
+    "versioning_enabled": true,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "DataClassification": "Confidential",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "company-internal-backups-database",
+    "arn": "arn:aws:s3:::company-internal-backups-database",
+    "region": "ap-southeast-1",
+    "creation_date": "2025-11-26T02:30:20+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "DataClassification": "Public",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "company-temp-developer-dropzone",
+    "arn": "arn:aws:s3:::company-temp-developer-dropzone",
+    "region": "ap-southeast-1",
+    "creation_date": "2024-11-25T08:24:03+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicReadGetObject",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket"
+          ],
+          "Resource": [
+            "arn:aws:s3:::company-temp-developer-dropzone/*",
+            "arn:aws:s3:::company-temp-developer-dropzone"
+          ]
+        }
+      ]
+    },
+    "tags": {
+      "DataClassification": "Public",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-just-they-376",
+    "arn": "arn:aws:s3:::corp-just-they-376",
+    "region": "us-west-2",
+    "creation_date": "2025-10-06T14:35:09+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-just-they-376/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Development",
+      "Project": "syndicate interactive bandwidth"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": true,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-ok-check-432",
+    "arn": "arn:aws:s3:::corp-ok-check-432",
+    "region": "us-east-1",
+    "creation_date": "2025-07-21T18:42:12+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/821c1336-9970-4f60-abff-8d1530cbd755",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "extend global partnerships"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-fact-spring-941",
+    "arn": "arn:aws:s3:::corp-fact-spring-941",
+    "region": "us-east-1",
+    "creation_date": "2026-06-02T10:55:28+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/ef2ae713-5702-4049-aa39-aaa6dabac50d",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Staging",
+      "Project": "generate real-time synergies"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-fear-she-510",
+    "arn": "arn:aws:s3:::corp-fear-she-510",
+    "region": "eu-west-1",
+    "creation_date": "2025-05-16T17:37:34+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "e-enable holistic eyeballs"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-likely-nothing-316",
+    "arn": "arn:aws:s3:::corp-likely-nothing-316",
+    "region": "eu-west-1",
+    "creation_date": "2025-10-08T00:55:11+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:eu-west-1:123456789012:key/c34b9fbb-8d4a-45b8-951a-c8ea585a0afa",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-likely-nothing-316/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Production",
+      "Project": "incubate enterprise bandwidth"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-worker-fund-771",
+    "arn": "arn:aws:s3:::corp-worker-fund-771",
+    "region": "ap-southeast-1",
+    "creation_date": "2026-08-03T06:41:32+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:ap-southeast-1:123456789012:key/3d225c30-b28f-41de-bb14-0bc3304b8590",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Staging",
+      "Project": "maximize integrated e-services"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-total-stand-758",
+    "arn": "arn:aws:s3:::corp-total-stand-758",
+    "region": "ap-southeast-1",
+    "creation_date": "2025-08-11T21:32:41+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "integrate turn-key info-mediaries"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-season-white-371",
+    "arn": "arn:aws:s3:::corp-season-white-371",
+    "region": "us-west-2",
+    "creation_date": "2026-06-19T01:54:00+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/a9e782d4-fd08-432c-a2d6-0e9361985d54",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "generate B2C models"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-although-card-862",
+    "arn": "arn:aws:s3:::corp-although-card-862",
+    "region": "eu-west-1",
+    "creation_date": "2025-10-21T23:31:39+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:eu-west-1:123456789012:key/dea4ae17-54fd-4ad3-9716-108ef72169bb",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-although-card-862/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Development",
+      "Project": "transform visionary platforms"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-never-whether-698",
+    "arn": "arn:aws:s3:::corp-never-whether-698",
+    "region": "ap-southeast-1",
+    "creation_date": "2025-09-16T17:53:55+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "implement B2B e-markets"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-truth-real-508",
+    "arn": "arn:aws:s3:::corp-truth-real-508",
+    "region": "eu-west-1",
+    "creation_date": "2025-01-24T17:38:37+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:eu-west-1:123456789012:key/f81dbaa1-c812-4a8e-b830-89301327f1bc",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "morph cross-platform e-business"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-room-information-241",
+    "arn": "arn:aws:s3:::corp-room-information-241",
+    "region": "ap-southeast-1",
+    "creation_date": "2026-02-13T13:58:30+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:ap-southeast-1:123456789012:key/da330aa1-541c-4fcd-9a0d-4a5f148f8b74",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Production",
+      "Project": "innovate enterprise vortals"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-produce-serious-873",
+    "arn": "arn:aws:s3:::corp-produce-serious-873",
+    "region": "us-east-1",
+    "creation_date": "2026-08-17T03:11:52+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-produce-serious-873/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Production",
+      "Project": "engineer holistic users"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": true,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-also-prepare-256",
+    "arn": "arn:aws:s3:::corp-also-prepare-256",
+    "region": "us-west-2",
+    "creation_date": "2024-11-18T23:35:49+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/ebc2026f-af34-4f65-a193-c4b23c19e71d",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "envisioneer bleeding-edge infrastructures"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-leader-billion-532",
+    "arn": "arn:aws:s3:::corp-leader-billion-532",
+    "region": "us-east-1",
+    "creation_date": "2026-05-10T10:27:37+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/19bad7ae-df61-4a5c-b432-3070a23d4c2f",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Staging",
+      "Project": "grow frictionless content"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-well-air-490",
+    "arn": "arn:aws:s3:::corp-well-air-490",
+    "region": "ap-southeast-1",
+    "creation_date": "2024-11-01T13:28:32+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "harness leading-edge technologies"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-her-house-357",
+    "arn": "arn:aws:s3:::corp-her-house-357",
+    "region": "us-east-1",
+    "creation_date": "2025-08-27T08:43:32+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/697c3923-87fa-441a-be83-b91f25440fe0",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-her-house-357/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Development",
+      "Project": "maximize viral communities"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-continue-bar-838",
+    "arn": "arn:aws:s3:::corp-continue-bar-838",
+    "region": "us-east-1",
+    "creation_date": "2026-01-13T05:53:32+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/aee1e86b-9ea5-46aa-a1ee-6c5bdeef580f",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "incentivize rich applications"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-character-each-649",
+    "arn": "arn:aws:s3:::corp-character-each-649",
+    "region": "eu-west-1",
+    "creation_date": "2025-09-20T00:35:57+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "whiteboard dot-com bandwidth"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-especially-reflect-448",
+    "arn": "arn:aws:s3:::corp-especially-reflect-448",
+    "region": "us-east-1",
+    "creation_date": "2024-10-04T03:19:21+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-east-1:123456789012:key/e6b5a92c-771a-4655-8dfc-6ee0e61ede90",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Staging",
+      "Project": "envisioneer granular partnerships"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-letter-you-545",
+    "arn": "arn:aws:s3:::corp-letter-you-545",
+    "region": "us-west-2",
+    "creation_date": "2025-06-22T05:57:07+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/a3917c99-4c95-4f6a-966b-1964fcd6bdca",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-letter-you-545/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Staging",
+      "Project": "brand dot-com bandwidth"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-through-five-103",
+    "arn": "arn:aws:s3:::corp-through-five-103",
+    "region": "eu-west-1",
+    "creation_date": "2025-02-28T13:48:57+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": false,
+    "logging_enabled": false,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "synergize compelling platforms"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": true,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-economic-I-880",
+    "arn": "arn:aws:s3:::corp-economic-I-880",
+    "region": "us-west-2",
+    "creation_date": "2025-12-15T01:33:13+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:us-west-2:123456789012:key/fe2110d0-4bbe-4aff-9326-dffd5be4bf51",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": true,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "scale distributed web-readiness"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": false
+    }
+  },
+  {
+    "bucket_name": "corp-themselves-reason-208",
+    "arn": "arn:aws:s3:::corp-themselves-reason-208",
+    "region": "eu-west-1",
+    "creation_date": "2025-07-31T06:29:44+00:00",
+    "is_public": false,
+    "acl_grants": [
+      {
+        "grantee_type": "CanonicalUser",
+        "permission": "FULL_CONTROL"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption_enabled": true,
+    "kms_master_key_id": "arn:aws:kms:eu-west-1:123456789012:key/dd750e98-90e0-495f-8212-b554464458b4",
+    "server_side_encryption_algorithm": "AES256",
+    "versioning_enabled": false,
+    "logging_enabled": true,
+    "bucket_policy": null,
+    "tags": {
+      "Environment": "Development",
+      "Project": "innovate scalable metrics"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": false,
+      "missing_encryption": false,
+      "missing_versioning": true
+    }
+  },
+  {
+    "bucket_name": "corp-skill-model-619",
+    "arn": "arn:aws:s3:::corp-skill-model-619",
+    "region": "us-west-2",
+    "creation_date": "2026-07-05T17:23:03+00:00",
+    "is_public": true,
+    "acl_grants": [
+      {
+        "grantee_type": "Group",
+        "permission": "READ",
+        "uri": "http://acs.amazonaws.com/groups/global/AllUsers"
+      }
+    ],
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption_enabled": false,
+    "kms_master_key_id": null,
+    "server_side_encryption_algorithm": null,
+    "versioning_enabled": true,
+    "logging_enabled": false,
+    "bucket_policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicAccessStatement",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::corp-skill-model-619/*"
+        }
+      ]
+    },
+    "tags": {
+      "Environment": "Production",
+      "Project": "productize front-end e-services"
+    },
+    "_injected_misconfiguration": {
+      "public_accessible": true,
+      "missing_encryption": true,
+      "missing_versioning": false
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+    "dataset_name": "Synthetic AWS CloudTrail Behavioral Security Dataset",
+    "status": "VALIDATED",
+    "row_count": 500000,
+    "column_count": 54,
+    "class_distribution": {
+        "NORMAL": 457039,
+        "SUSPICIOUS": 21664,
+        "ANOMALOUS": 21297
+    },
+    "scenario_distribution": {
+        "NORMAL_BEHAVIOR": 422002,
+        "SERVICE_ACTIVITY": 20000,
+        "OFF_HOURS_ANOMALY": 12000,
+        "RECONNAISSANCE": 12000,
+        "MFA_ANOMALY": 8000,
+        "SERVICE_DISCOVERY": 7998,
+        "SENSITIVE_IAM": 6000,
+        "PRIVILEGE_ESCALATION": 4000,
+        "FAILED_SENSITIVE_OPERATION": 3000,
+        "CREDENTIAL_ACTIVITY": 3000,
+        "COMPOUND_ATTACK_CHAIN": 2000
+    },
+    "severity_distribution": {
+        "LOW": 461609,
+        "MEDIUM": 30498,
+        "CRITICAL": 5203,
+        "HIGH": 2690
+    },
+    "region_distribution": {
+        "us-east-1": 140586,
+        "us-east-2": 90196,
+        "us-west-2": 90108,
+        "eu-west-1": 89611,
+        "ap-southeast-1": 89499
+    },
+    "event_distribution_top15": {
+        "DescribeInstances": 80555,
+        "DescribeAutoScalingGroups": 52221,
+        "DescribeSecurityGroups": 37830,
+        "DescribeVolumes": 35588,
+        "ListBuckets": 33900,
+        "AssumeRole": 29798,
+        "ListRoles": 24241,
+        "GetCallerIdentity": 22264,
+        "GetRole": 18424,
+        "DescribeSubnets": 17148,
+        "LookupEvents": 16047,
+        "ListPolicies": 14994,
+        "GetDatabases": 12673,
+        "GetBucketLocation": 11584,
+        "GetTables": 9544
+    },
+    "identity_distribution_top10": {
+        "dev-backend-user": 56814,
+        "dev-lead-user": 53744,
+        "ci-cd-deploy-role": 51432,
+        "ops-infra-user": 50630,
+        "sec-analyst-alice": 49240,
+        "dev-frontend-user": 47763,
+        "sec-compliance-auditor": 47168,
+        "monitoring-agent-role": 46965,
+        "ops-platform-admin": 46732,
+        "compromised-contractor": 21203
+    },
+    "failure_rate_percent": 0.65,
+    "off_hours_rate_percent": 13.0,
+    "mfa_distribution": {
+        "true": 346034,
+        "unknown": 126706,
+        "false": 27260
+    },
+    "unique_correlated_sequences": 2,
+    "duplicate_count": 119,
+    "missing_values": 0,
+    "train_count": 350029,
+    "validation_count": 74955,
+    "test_count": 75016,
+    "llm_examples_count": 100000,
+    "validation_errors": [],
+    "validation_warnings": []
+}

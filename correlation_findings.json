@@ -1,0 +1,68 @@
+{
+  "total_events_correlated": 500000,
+  "correlated_patterns_detected": 4,
+  "patterns": [
+    {
+      "correlation_rule": "Privilege Escalation Sequence",
+      "severity": "HIGH",
+      "score": 30,
+      "matched_events": [
+        "AssumeRole",
+        "CreateRole",
+        "AttachRolePolicy"
+      ],
+      "matched_event_volume": 32897,
+      "description": "Multiple IAM privilege-related operations observed together."
+    },
+    {
+      "correlation_rule": "Reconnaissance Sequence",
+      "severity": "MEDIUM",
+      "score": 20,
+      "matched_events": [
+        "ListResources",
+        "ListTables",
+        "ListBuckets",
+        "DescribeDBSubnetGroups"
+      ],
+      "matched_event_volume": 55720,
+      "description": "Multiple resource discovery operations indicate reconnaissance behavior."
+    },
+    {
+      "correlation_rule": "Sensitive IAM Activity",
+      "severity": "HIGH",
+      "score": 25,
+      "matched_events": [
+        "ListSecurityConfigurations",
+        "AssumeRole",
+        "ListRolePolicies"
+      ],
+      "matched_event_volume": 40608,
+      "description": "Sensitive IAM operations occurring together."
+    },
+    {
+      "correlation_rule": "Service Discovery Pattern",
+      "severity": "MEDIUM",
+      "score": 15,
+      "matched_events": [
+        "ListServices",
+        "ListResources",
+        "DescribeAutoScalingGroups"
+      ],
+      "matched_event_volume": 64112,
+      "description": "Multiple cloud service discovery operations observed."
+    }
+  ],
+  "attack_scenario_breakdown": {
+    "NORMAL_BEHAVIOR": 422002,
+    "OFF_HOURS_ANOMALY": 12000,
+    "FAILED_SENSITIVE_OPERATION": 3000,
+    "RECONNAISSANCE": 12000,
+    "SERVICE_DISCOVERY": 7998,
+    "CREDENTIAL_ACTIVITY": 3000,
+    "SERVICE_ACTIVITY": 20000,
+    "SENSITIVE_IAM": 6000,
+    "MFA_ANOMALY": 8000,
+    "PRIVILEGE_ESCALATION": 4000,
+    "COMPOUND_ATTACK_CHAIN": 2000
+  }
+}

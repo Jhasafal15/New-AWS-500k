@@ -1,0 +1,1799 @@
+[
+  {
+    "instance_id": "i-2931a4c4555e1db7",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-2931a4c4555e1db7",
+    "name": "web-bastion-ssh-public",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "170.27.79.110",
+    "private_ip": "172.27.247.126",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-481fb339258e4d27",
+    "ami_creation_date": "2024-06-10T17:10:35+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-e9e779f6bee9cd56",
+        "group_name": "web-bastion-ssh-public-sg",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH public access"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS traffic"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "EC2InstanceProfile-eat",
+    "tags": {
+      "Name": "web-bastion-ssh-public",
+      "Environment": "Production",
+      "Owner": "SecOps"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-c2b70a3a4419f4fe",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-c2b70a3a4419f4fe",
+    "name": "windows-jump-host-rdp",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "160.178.81.39",
+    "private_ip": "192.168.191.33",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-3f0749d0b7d52b20",
+    "ami_creation_date": "2026-09-27T07:36:59+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-020864d3979317de",
+        "group_name": "windows-jump-host-rdp-sg",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 3389,
+            "to_port": 3389,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "RDP public access"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS traffic"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "EC2InstanceProfile-environment",
+    "tags": {
+      "Name": "windows-jump-host-rdp",
+      "Environment": "Production",
+      "Owner": "SecOps"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": true,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-0b2b73a41ba5ef54",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-0b2b73a41ba5ef54",
+    "name": "jenkins-ci-controller-open",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "221.199.136.166",
+    "private_ip": "192.168.92.100",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-d3b41a3dbd199b36",
+    "region": "us-east-1",
+    "ami_id": "ami-1a83bdceca5ffb82",
+    "ami_creation_date": "2023-07-01T15:06:10+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-2e196161a9cf8169",
+        "group_name": "jenkins-ci-controller-open-sg",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH public access"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 8080,
+            "to_port": 8080,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "Web service public access"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS traffic"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "EC2InstanceProfile-offer",
+    "tags": {
+      "Name": "jenkins-ci-controller-open",
+      "Environment": "Production",
+      "Owner": "SecOps"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": true,
+      "outdated_ami": true,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-9a32a99ed5ebe1bd",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-9a32a99ed5ebe1bd",
+    "name": "secure-app-backend",
+    "instance_type": "m5.large",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "172.19.196.178",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-ab054c24026cdea5",
+    "region": "us-east-1",
+    "ami_id": "ami-14ebbe24bca87305",
+    "ami_creation_date": "2026-09-27T07:39:08+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-812cb504e1427bbc",
+        "group_name": "secure-app-backend-sg",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "Internal SSH only"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "Internal HTTPS"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "EC2InstanceProfile-everybody",
+    "tags": {
+      "Name": "secure-app-backend",
+      "Environment": "Production",
+      "Owner": "SecOps"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-8e69f6342e5e2ab2",
+    "arn": "arn:aws:ec2:us-west-2:123456789012:instance/i-8e69f6342e5e2ab2",
+    "name": "analytics-worker-prod",
+    "instance_type": "m5.large",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "10.28.95.18",
+    "vpc_id": "vpc-3bb1c863e2601a74",
+    "subnet_id": "subnet-e719e01fcd3fe22a",
+    "region": "us-west-2",
+    "ami_id": "ami-229cfdd24a2eeb45",
+    "ami_creation_date": "2026-09-27T07:39:19+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-9955b73647f0bbe4",
+        "group_name": "analytics-worker-prod-sg",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "10.1.0.0/16",
+            "description": "Internal SSH only"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.1.0.0/16",
+            "description": "Internal HTTPS"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "EC2InstanceProfile-theory",
+    "tags": {
+      "Name": "analytics-worker-prod",
+      "Environment": "Production",
+      "Owner": "SecOps"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-34955a7b92868492",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-34955a7b92868492",
+    "name": "ec2-support-40",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "192.168.232.54",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-72e9d34119f3374c",
+    "region": "eu-west-1",
+    "ami_id": "ami-215edfe6a4aabc4b",
+    "ami_creation_date": "2023-04-05T13:28:37+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-545a102186d0f99f",
+        "group_name": "sg-myself",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.0.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-or",
+    "tags": {
+      "Name": "inst-0",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-3a7e38e74319cd75",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-3a7e38e74319cd75",
+    "name": "ec2-apply-18",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "158.30.24.80",
+    "private_ip": "172.19.112.157",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-d48bcb1c16b92ce8",
+    "ami_creation_date": "2026-09-27T07:35:07+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-aa65fef9f02ce76b",
+        "group_name": "sg-that",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-price",
+    "tags": {
+      "Name": "inst-1",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-343cbab46c1114af",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-343cbab46c1114af",
+    "name": "ec2-past-80",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "160.109.37.145",
+    "private_ip": "192.168.116.128",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-1f5c471360ead4d6",
+    "ami_creation_date": "2026-09-27T07:38:16+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-e44aa5c9af9f0ba3",
+        "group_name": "sg-item",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-more",
+    "tags": {
+      "Name": "inst-2",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-f146afca5eab8f67",
+    "arn": "arn:aws:ec2:ap-southeast-1:123456789012:instance/i-f146afca5eab8f67",
+    "name": "ec2-summer-64",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "10.147.68.72",
+    "vpc_id": "vpc-a4e2fe981b29ee11",
+    "subnet_id": "subnet-a3c984a24b9c429c",
+    "region": "ap-southeast-1",
+    "ami_id": "ami-2be8f66884377177",
+    "ami_creation_date": "2024-05-19T19:35:07+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-897996fafb893ccb",
+        "group_name": "sg-area",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.4.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-black",
+    "tags": {
+      "Name": "inst-3",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-daf3405dff69a912",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-daf3405dff69a912",
+    "name": "ec2-put-61",
+    "instance_type": "t3.medium",
+    "state": "stopped",
+    "public_ip": "205.18.215.107",
+    "private_ip": "192.168.98.184",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-d3b41a3dbd199b36",
+    "region": "us-east-1",
+    "ami_id": "ami-3a5e850a965cda2c",
+    "ami_creation_date": "2026-09-27T07:38:35+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-715d51cf591093a9",
+        "group_name": "sg-relationship",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-beyond",
+    "tags": {
+      "Name": "inst-4",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-54fa708c7e8a908b",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-54fa708c7e8a908b",
+    "name": "ec2-small-25",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "223.17.6.11",
+    "private_ip": "192.168.111.211",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-72eb231645ae36f2",
+    "ami_creation_date": "2026-09-27T07:38:35+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-713e95c939b774f4",
+        "group_name": "sg-way",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 8080,
+            "to_port": 8080,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "Port 8080 internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-Mrs",
+    "tags": {
+      "Name": "inst-5",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": true,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-e1e4de1e90c80621",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-e1e4de1e90c80621",
+    "name": "ec2-be-12",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "192.168.68.23",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-ab054c24026cdea5",
+    "region": "us-east-1",
+    "ami_id": "ami-b35c47009edc77eb",
+    "ami_creation_date": "2023-07-16T03:09:44+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-db212f19d54dbcec",
+        "group_name": "sg-clear",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-fact",
+    "tags": {
+      "Name": "inst-6",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-631d076231e171ce",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-631d076231e171ce",
+    "name": "ec2-perhaps-90",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": "197.181.116.17",
+    "private_ip": "192.168.176.87",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-cadd49c5f7794e1d",
+    "ami_creation_date": "2026-09-27T07:39:28+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-761497aa7947d981",
+        "group_name": "sg-keep",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-onto",
+    "tags": {
+      "Name": "inst-7",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-4c786a2eb2618c12",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-4c786a2eb2618c12",
+    "name": "ec2-husband-52",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": "187.127.13.231",
+    "private_ip": "172.31.233.178",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-e3fa6bad17408d94",
+    "ami_creation_date": "2026-09-27T07:37:07+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-66f6a90663f76c7a",
+        "group_name": "sg-deal",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-girl",
+    "tags": {
+      "Name": "inst-8",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-7c7fa8ffe5b54f51",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-7c7fa8ffe5b54f51",
+    "name": "ec2-according-37",
+    "instance_type": "t3.small",
+    "state": "stopped",
+    "public_ip": null,
+    "private_ip": "192.168.6.17",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-2d37dc2c9a7a5236",
+    "region": "eu-west-1",
+    "ami_id": "ami-0890d5334768b8c2",
+    "ami_creation_date": "2022-10-09T13:53:00+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-1210d472406eb1ff",
+        "group_name": "sg-hour",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.3.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-into",
+    "tags": {
+      "Name": "inst-9",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-e779212cccf1052f",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-e779212cccf1052f",
+    "name": "ec2-charge-62",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "193.39.100.89",
+    "private_ip": "172.23.177.242",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-cac42b13d72aca08",
+    "ami_creation_date": "2026-09-27T07:39:43+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-da3176f812815a06",
+        "group_name": "sg-step",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 8080,
+            "to_port": 8080,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "Port 8080 internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-little",
+    "tags": {
+      "Name": "inst-10",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": true,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-f7bcd5c2972284c4",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-f7bcd5c2972284c4",
+    "name": "ec2-one-55",
+    "instance_type": "c5.large",
+    "state": "stopped",
+    "public_ip": "208.215.35.53",
+    "private_ip": "10.47.166.30",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-ac09dc275c54898f",
+    "ami_creation_date": "2026-09-27T07:39:28+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-cab3209eb83425de",
+        "group_name": "sg-child",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-at",
+    "tags": {
+      "Name": "inst-11",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-5d8d9f2b87f6e349",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-5d8d9f2b87f6e349",
+    "name": "ec2-film-96",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "192.168.251.101",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-72e9d34119f3374c",
+    "region": "eu-west-1",
+    "ami_id": "ami-7ac8cb3650e6e92d",
+    "ami_creation_date": "2023-06-02T05:46:45+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-0cacaead49a6fa5c",
+        "group_name": "sg-report",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.0.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-money",
+    "tags": {
+      "Name": "inst-12",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-49784dc2efcd1b23",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-49784dc2efcd1b23",
+    "name": "ec2-sport-23",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "205.52.185.194",
+    "private_ip": "172.31.114.220",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-d3b41a3dbd199b36",
+    "region": "us-east-1",
+    "ami_id": "ami-39d234b9ae6fbf3e",
+    "ami_creation_date": "2026-09-27T07:38:40+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-7b51cad303877ebc",
+        "group_name": "sg-seven",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-same",
+    "tags": {
+      "Name": "inst-13",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-ea29130a35755ade",
+    "arn": "arn:aws:ec2:ap-southeast-1:123456789012:instance/i-ea29130a35755ade",
+    "name": "ec2-blue-67",
+    "instance_type": "t3.small",
+    "state": "stopped",
+    "public_ip": "218.110.119.233",
+    "private_ip": "10.134.83.47",
+    "vpc_id": "vpc-a4e2fe981b29ee11",
+    "subnet_id": "subnet-b922ce1e6af41e3a",
+    "region": "ap-southeast-1",
+    "ami_id": "ami-facc3bbe5924a379",
+    "ami_creation_date": "2026-09-27T07:39:38+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-7c55dc06edc06682",
+        "group_name": "sg-but",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-cover",
+    "tags": {
+      "Name": "inst-14",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-b4cd4cd5f55f945a",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-b4cd4cd5f55f945a",
+    "name": "ec2-allow-69",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "10.140.185.133",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-ab054c24026cdea5",
+    "region": "us-east-1",
+    "ami_id": "ami-795ef338b1e6d379",
+    "ami_creation_date": "2023-12-10T12:24:03+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-e1b0f46cfdfdef52",
+        "group_name": "sg-two",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-alone",
+    "tags": {
+      "Name": "inst-15",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-e8b2e376bd54661b",
+    "arn": "arn:aws:ec2:ap-southeast-1:123456789012:instance/i-e8b2e376bd54661b",
+    "name": "ec2-sort-22",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": "212.140.171.135",
+    "private_ip": "192.168.212.21",
+    "vpc_id": "vpc-a4e2fe981b29ee11",
+    "subnet_id": "subnet-b922ce1e6af41e3a",
+    "region": "ap-southeast-1",
+    "ami_id": "ami-ce22c8befa02eb2c",
+    "ami_creation_date": "2026-09-27T07:36:49+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-85a99834d184474a",
+        "group_name": "sg-discover",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-laugh",
+    "tags": {
+      "Name": "inst-16",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-6f8a9a4fa113e035",
+    "arn": "arn:aws:ec2:us-west-2:123456789012:instance/i-6f8a9a4fa113e035",
+    "name": "ec2-process-31",
+    "instance_type": "c5.large",
+    "state": "stopped",
+    "public_ip": "183.126.27.56",
+    "private_ip": "172.19.11.190",
+    "vpc_id": "vpc-3bb1c863e2601a74",
+    "subnet_id": "subnet-62667a4084485304",
+    "region": "us-west-2",
+    "ami_id": "ami-06f247e00a3d4f27",
+    "ami_creation_date": "2026-09-27T07:38:05+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-ee0d649582b82b51",
+        "group_name": "sg-identify",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-behind",
+    "tags": {
+      "Name": "inst-17",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-33ab94c44205eb64",
+    "arn": "arn:aws:ec2:us-west-2:123456789012:instance/i-33ab94c44205eb64",
+    "name": "ec2-plant-61",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "192.168.145.225",
+    "vpc_id": "vpc-3bb1c863e2601a74",
+    "subnet_id": "subnet-e719e01fcd3fe22a",
+    "region": "us-west-2",
+    "ami_id": "ami-0966c917fc37f20b",
+    "ami_creation_date": "2023-12-01T04:40:58+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-de62343cbda47827",
+        "group_name": "sg-world",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.1.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-free",
+    "tags": {
+      "Name": "inst-18",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-4cdb5f20208611c9",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-4cdb5f20208611c9",
+    "name": "ec2-article-59",
+    "instance_type": "t3.medium",
+    "state": "stopped",
+    "public_ip": "91.206.148.69",
+    "private_ip": "10.28.44.182",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-9530405fb85b4830",
+    "ami_creation_date": "2026-09-27T07:36:45+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-ddc24829264ac29d",
+        "group_name": "sg-government",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-surface",
+    "tags": {
+      "Name": "inst-19",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-d8282feb1f5b5833",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-d8282feb1f5b5833",
+    "name": "ec2-whole-99",
+    "instance_type": "c5.large",
+    "state": "running",
+    "public_ip": "210.126.13.4",
+    "private_ip": "192.168.26.247",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-571c2e99a2e0b699",
+    "ami_creation_date": "2026-09-27T07:38:16+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-701071fbc451d7a7",
+        "group_name": "sg-sister",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 8080,
+            "to_port": 8080,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "Port 8080 internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-prevent",
+    "tags": {
+      "Name": "inst-20",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": true,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-7ebf6740d07b0a0c",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-7ebf6740d07b0a0c",
+    "name": "ec2-beyond-37",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "192.168.201.232",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-ab054c24026cdea5",
+    "region": "us-east-1",
+    "ami_id": "ami-21d4798acaae8726",
+    "ami_creation_date": "2023-12-22T10:58:16+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-9367df148217dbe2",
+        "group_name": "sg-century",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-state",
+    "tags": {
+      "Name": "inst-21",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-3435eead3b6e9e83",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-3435eead3b6e9e83",
+    "name": "ec2-top-17",
+    "instance_type": "t3.micro",
+    "state": "stopped",
+    "public_ip": "183.254.202.243",
+    "private_ip": "10.71.146.244",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-d3b41a3dbd199b36",
+    "region": "us-east-1",
+    "ami_id": "ami-301746cb282026e4",
+    "ami_creation_date": "2026-09-27T07:38:10+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-25916a427bc19850",
+        "group_name": "sg-best",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-west",
+    "tags": {
+      "Name": "inst-22",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-a31e15dcf0cd5b65",
+    "arn": "arn:aws:ec2:ap-southeast-1:123456789012:instance/i-a31e15dcf0cd5b65",
+    "name": "ec2-question-30",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": "208.159.253.86",
+    "private_ip": "172.27.125.216",
+    "vpc_id": "vpc-a4e2fe981b29ee11",
+    "subnet_id": "subnet-b922ce1e6af41e3a",
+    "region": "ap-southeast-1",
+    "ami_id": "ami-ffbac850a7081fb7",
+    "ami_creation_date": "2026-09-27T07:36:25+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-88e4179fdf128c4d",
+        "group_name": "sg-collection",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-black",
+    "tags": {
+      "Name": "inst-23",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-77817cb557ab0b46",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-77817cb557ab0b46",
+    "name": "ec2-cost-86",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "172.20.186.14",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-72e9d34119f3374c",
+    "region": "eu-west-1",
+    "ami_id": "ami-43b2bc3a9a45dfa5",
+    "ami_creation_date": "2024-04-06T05:18:29+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-f95f121770f0a64a",
+        "group_name": "sg-second",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.0.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-or",
+    "tags": {
+      "Name": "inst-24",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-b75c99450c15a73f",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-b75c99450c15a73f",
+    "name": "ec2-stop-82",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "35.20.217.18",
+    "private_ip": "172.29.109.204",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-5dfcbc3f75e2190a",
+    "ami_creation_date": "2026-09-27T07:36:54+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-4a27ba52ae08672b",
+        "group_name": "sg-every",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 8080,
+            "to_port": 8080,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "Port 8080 internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-book",
+    "tags": {
+      "Name": "inst-25",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": true,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-2a5c522af0d5d513",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-2a5c522af0d5d513",
+    "name": "ec2-begin-63",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "167.175.108.212",
+    "private_ip": "10.105.245.189",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-592f39cff82c5bcb",
+    "ami_creation_date": "2026-09-27T07:38:21+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-a66d899731cf41b0",
+        "group_name": "sg-culture",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-like",
+    "tags": {
+      "Name": "inst-26",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-18ee8781432bd71c",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-18ee8781432bd71c",
+    "name": "ec2-land-40",
+    "instance_type": "t3.medium",
+    "state": "stopped",
+    "public_ip": null,
+    "private_ip": "10.222.235.221",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-ab054c24026cdea5",
+    "region": "us-east-1",
+    "ami_id": "ami-648a22cca8e0d3d4",
+    "ami_creation_date": "2022-10-30T12:09:30+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-df7f92c143e55664",
+        "group_name": "sg-choose",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.2.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-our",
+    "tags": {
+      "Name": "inst-27",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-3339bd8cff158c4c",
+    "arn": "arn:aws:ec2:us-east-1:123456789012:instance/i-3339bd8cff158c4c",
+    "name": "ec2-first-68",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "218.68.141.160",
+    "private_ip": "172.18.219.112",
+    "vpc_id": "vpc-aecd3ada8b4f2222",
+    "subnet_id": "subnet-d3b41a3dbd199b36",
+    "region": "us-east-1",
+    "ami_id": "ami-6e6dfb1529c40566",
+    "ami_creation_date": "2026-09-27T07:35:51+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-1ca71f8b0a998f37",
+        "group_name": "sg-third",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-article",
+    "tags": {
+      "Name": "inst-28",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-71e1b68bec307bfe",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-71e1b68bec307bfe",
+    "name": "ec2-reach-89",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": "176.72.228.108",
+    "private_ip": "172.21.138.220",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-07898dcbe86e9c30",
+    "ami_creation_date": "2026-09-27T07:37:00+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-5fbb58290c156776",
+        "group_name": "sg-much",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-recognize",
+    "tags": {
+      "Name": "inst-29",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-b993f2a8a8896471",
+    "arn": "arn:aws:ec2:us-west-2:123456789012:instance/i-b993f2a8a8896471",
+    "name": "ec2-first-74",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "10.92.189.214",
+    "vpc_id": "vpc-3bb1c863e2601a74",
+    "subnet_id": "subnet-e719e01fcd3fe22a",
+    "region": "us-west-2",
+    "ami_id": "ami-93f485a27b79dab8",
+    "ami_creation_date": "2023-10-26T09:39:22+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-ca40f98dcc16a7fb",
+        "group_name": "sg-pay",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.1.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-financial",
+    "tags": {
+      "Name": "inst-30",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-e3f12f63c9d1446a",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-e3f12f63c9d1446a",
+    "name": "ec2-south-41",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "124.90.39.130",
+    "private_ip": "10.219.219.151",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-cdfc016b0a60077b",
+    "ami_creation_date": "2026-09-27T07:39:38+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-de4a52fa5a10e865",
+        "group_name": "sg-forget",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-carry",
+    "tags": {
+      "Name": "inst-31",
+      "Environment": "Production"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-3c952199ead4afb6",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-3c952199ead4afb6",
+    "name": "ec2-ready-79",
+    "instance_type": "t3.medium",
+    "state": "running",
+    "public_ip": "71.105.25.191",
+    "private_ip": "172.19.244.125",
+    "vpc_id": "vpc-63bd39f917c10696",
+    "subnet_id": "subnet-489a30fd54c7b2c1",
+    "region": "eu-west-1",
+    "ami_id": "ami-8f4609d384d33933",
+    "ami_creation_date": "2026-09-27T07:35:38+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-5c07746053b1c811",
+        "group_name": "sg-modern",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 22,
+            "to_port": 22,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "SSH internet"
+          },
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-decide",
+    "tags": {
+      "Name": "inst-32",
+      "Environment": "Dev"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": true,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": true
+    }
+  },
+  {
+    "instance_id": "i-686bd951f6fa7002",
+    "arn": "arn:aws:ec2:ap-southeast-1:123456789012:instance/i-686bd951f6fa7002",
+    "name": "ec2-fill-48",
+    "instance_type": "t3.micro",
+    "state": "running",
+    "public_ip": null,
+    "private_ip": "172.26.1.178",
+    "vpc_id": "vpc-a4e2fe981b29ee11",
+    "subnet_id": "subnet-a3c984a24b9c429c",
+    "region": "ap-southeast-1",
+    "ami_id": "ami-d331045abe82ba53",
+    "ami_creation_date": "2024-07-20T07:41:20+00:00",
+    "is_outdated_ami": true,
+    "security_groups": [
+      {
+        "group_id": "sg-3f422387e98e1351",
+        "group_name": "sg-institution",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "10.4.0.0/16",
+            "description": "VPC CIDR only"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-instead",
+    "tags": {
+      "Name": "inst-33",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": true,
+      "public_exposure": false
+    }
+  },
+  {
+    "instance_id": "i-e8cfd534153dfe5c",
+    "arn": "arn:aws:ec2:eu-west-1:123456789012:instance/i-e8cfd534153dfe5c",
+    "name": "ec2-recently-23",
+    "instance_type": "t3.small",
+    "state": "running",
+    "public_ip": "219.16.97.59",
+    "private_ip": "192.168.197.14",
+    "vpc_id": "vpc-b7684319e1b429ad",
+    "subnet_id": "subnet-564b858f9a3e247c",
+    "region": "eu-west-1",
+    "ami_id": "ami-4105ff52fa7a817c",
+    "ami_creation_date": "2026-09-27T07:38:24+00:00",
+    "is_outdated_ami": false,
+    "security_groups": [
+      {
+        "group_id": "sg-b04ff3de128a07a3",
+        "group_name": "sg-interesting",
+        "inbound_rules": [
+          {
+            "protocol": "tcp",
+            "from_port": 443,
+            "to_port": 443,
+            "cidr_ip": "0.0.0.0/0",
+            "description": "HTTPS internet"
+          }
+        ]
+      }
+    ],
+    "iam_instance_profile": "Profile-technology",
+    "tags": {
+      "Name": "inst-34",
+      "Environment": "Staging"
+    },
+    "_injected_misconfiguration": {
+      "open_ssh": false,
+      "open_rdp": false,
+      "open_8080": false,
+      "outdated_ami": false,
+      "public_exposure": false
+    }
+  }
+]

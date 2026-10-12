@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EC2Instance",
+  "type": "object",
+  "required": ["instance_id", "arn", "instance_type", "state", "public_ip", "private_ip", "security_groups", "ami_id"],
+  "properties": {
+    "instance_id": { "type": "string" },
+    "arn": { "type": "string" },
+    "instance_type": { "type": "string" },
+    "state": { "type": "string", "enum": ["running", "stopped", "terminated"] },
+    "public_ip": { "type": ["string", "null"] },
+    "private_ip": { "type": "string" },
+    "vpc_id": { "type": "string" },
+    "subnet_id": { "type": "string" },
+    "ami_id": { "type": "string" },
+    "ami_creation_date": { "type": "string" },
+    "is_outdated_ami": { "type": "boolean" },
+    "security_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "group_id": { "type": "string" },
+          "group_name": { "type": "string" },
+          "inbound_rules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "protocol": { "type": "string" },
+                "from_port": { "type": ["integer", "null"] },
+                "to_port": { "type": ["integer", "null"] },
+                "cidr_ip": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "iam_instance_profile": { "type": ["string", "null"] },
+    "tags": { "type": "object" }
+  }
+}

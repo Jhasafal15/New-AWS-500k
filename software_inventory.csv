@@ -1,0 +1,160 @@
+instance_id,instance_name,public_ip,software_name,installed_version,is_vulnerable,cve_id,cve_severity,cisa_known_exploited,cisa_vulnerability_name,scan_timestamp
+i-2931a4c4555e1db7,web-bastion-ssh-public,170.27.79.110,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484679+00:00
+i-2931a4c4555e1db7,web-bastion-ssh-public,170.27.79.110,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484698+00:00
+i-2931a4c4555e1db7,web-bastion-ssh-public,170.27.79.110,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.484703+00:00
+i-2931a4c4555e1db7,web-bastion-ssh-public,170.27.79.110,curl,7.68.0,True,CVE-2023-38545,HIGH,True,curl SOCKS5 Heap Buffer Overflow Vulnerability,2026-09-27T07:39:43.484705+00:00
+i-2931a4c4555e1db7,web-bastion-ssh-public,170.27.79.110,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484708+00:00
+i-c2b70a3a4419f4fe,windows-jump-host-rdp,160.178.81.39,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484717+00:00
+i-c2b70a3a4419f4fe,windows-jump-host-rdp,160.178.81.39,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484720+00:00
+i-c2b70a3a4419f4fe,windows-jump-host-rdp,160.178.81.39,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484727+00:00
+i-0b2b73a41ba5ef54,jenkins-ci-controller-open,221.199.136.166,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484733+00:00
+i-0b2b73a41ba5ef54,jenkins-ci-controller-open,221.199.136.166,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484736+00:00
+i-0b2b73a41ba5ef54,jenkins-ci-controller-open,221.199.136.166,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484739+00:00
+i-0b2b73a41ba5ef54,jenkins-ci-controller-open,221.199.136.166,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484741+00:00
+i-0b2b73a41ba5ef54,jenkins-ci-controller-open,221.199.136.166,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484743+00:00
+i-9a32a99ed5ebe1bd,secure-app-backend,None,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484748+00:00
+i-9a32a99ed5ebe1bd,secure-app-backend,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484751+00:00
+i-9a32a99ed5ebe1bd,secure-app-backend,None,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484753+00:00
+i-9a32a99ed5ebe1bd,secure-app-backend,None,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484755+00:00
+i-8e69f6342e5e2ab2,analytics-worker-prod,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484761+00:00
+i-8e69f6342e5e2ab2,analytics-worker-prod,None,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484763+00:00
+i-8e69f6342e5e2ab2,analytics-worker-prod,None,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484765+00:00
+i-8e69f6342e5e2ab2,analytics-worker-prod,None,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484768+00:00
+i-34955a7b92868492,ec2-support-40,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484772+00:00
+i-34955a7b92868492,ec2-support-40,None,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484774+00:00
+i-34955a7b92868492,ec2-support-40,None,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484776+00:00
+i-34955a7b92868492,ec2-support-40,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484778+00:00
+i-3a7e38e74319cd75,ec2-apply-18,158.30.24.80,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484789+00:00
+i-3a7e38e74319cd75,ec2-apply-18,158.30.24.80,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484792+00:00
+i-3a7e38e74319cd75,ec2-apply-18,158.30.24.80,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484796+00:00
+i-343cbab46c1114af,ec2-past-80,160.109.37.145,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484801+00:00
+i-343cbab46c1114af,ec2-past-80,160.109.37.145,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484803+00:00
+i-343cbab46c1114af,ec2-past-80,160.109.37.145,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484805+00:00
+i-343cbab46c1114af,ec2-past-80,160.109.37.145,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484807+00:00
+i-343cbab46c1114af,ec2-past-80,160.109.37.145,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484809+00:00
+i-f146afca5eab8f67,ec2-summer-64,None,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484814+00:00
+i-f146afca5eab8f67,ec2-summer-64,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484816+00:00
+i-f146afca5eab8f67,ec2-summer-64,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484819+00:00
+i-f146afca5eab8f67,ec2-summer-64,None,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484821+00:00
+i-daf3405dff69a912,ec2-put-61,205.18.215.107,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484826+00:00
+i-daf3405dff69a912,ec2-put-61,205.18.215.107,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484829+00:00
+i-daf3405dff69a912,ec2-put-61,205.18.215.107,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484831+00:00
+i-daf3405dff69a912,ec2-put-61,205.18.215.107,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484833+00:00
+i-daf3405dff69a912,ec2-put-61,205.18.215.107,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484835+00:00
+i-54fa708c7e8a908b,ec2-small-25,223.17.6.11,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484839+00:00
+i-54fa708c7e8a908b,ec2-small-25,223.17.6.11,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484841+00:00
+i-54fa708c7e8a908b,ec2-small-25,223.17.6.11,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484843+00:00
+i-54fa708c7e8a908b,ec2-small-25,223.17.6.11,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484846+00:00
+i-54fa708c7e8a908b,ec2-small-25,223.17.6.11,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484848+00:00
+i-e1e4de1e90c80621,ec2-be-12,None,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484852+00:00
+i-e1e4de1e90c80621,ec2-be-12,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484855+00:00
+i-e1e4de1e90c80621,ec2-be-12,None,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484857+00:00
+i-631d076231e171ce,ec2-perhaps-90,197.181.116.17,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484861+00:00
+i-631d076231e171ce,ec2-perhaps-90,197.181.116.17,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484864+00:00
+i-631d076231e171ce,ec2-perhaps-90,197.181.116.17,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.484866+00:00
+i-631d076231e171ce,ec2-perhaps-90,197.181.116.17,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484868+00:00
+i-631d076231e171ce,ec2-perhaps-90,197.181.116.17,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484870+00:00
+i-4c786a2eb2618c12,ec2-husband-52,187.127.13.231,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484875+00:00
+i-4c786a2eb2618c12,ec2-husband-52,187.127.13.231,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484877+00:00
+i-4c786a2eb2618c12,ec2-husband-52,187.127.13.231,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484879+00:00
+i-7c7fa8ffe5b54f51,ec2-according-37,None,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.484883+00:00
+i-7c7fa8ffe5b54f51,ec2-according-37,None,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484885+00:00
+i-7c7fa8ffe5b54f51,ec2-according-37,None,curl,7.68.0,True,CVE-2023-38545,HIGH,True,curl SOCKS5 Heap Buffer Overflow Vulnerability,2026-09-27T07:39:43.484888+00:00
+i-7c7fa8ffe5b54f51,ec2-according-37,None,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484890+00:00
+i-e779212cccf1052f,ec2-charge-62,193.39.100.89,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484894+00:00
+i-e779212cccf1052f,ec2-charge-62,193.39.100.89,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484896+00:00
+i-e779212cccf1052f,ec2-charge-62,193.39.100.89,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484898+00:00
+i-e779212cccf1052f,ec2-charge-62,193.39.100.89,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484901+00:00
+i-f7bcd5c2972284c4,ec2-one-55,208.215.35.53,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484905+00:00
+i-f7bcd5c2972284c4,ec2-one-55,208.215.35.53,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484907+00:00
+i-f7bcd5c2972284c4,ec2-one-55,208.215.35.53,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484909+00:00
+i-5d8d9f2b87f6e349,ec2-film-96,None,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484914+00:00
+i-5d8d9f2b87f6e349,ec2-film-96,None,curl,7.68.0,True,CVE-2023-38545,HIGH,True,curl SOCKS5 Heap Buffer Overflow Vulnerability,2026-09-27T07:39:43.484916+00:00
+i-5d8d9f2b87f6e349,ec2-film-96,None,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484920+00:00
+i-5d8d9f2b87f6e349,ec2-film-96,None,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484922+00:00
+i-5d8d9f2b87f6e349,ec2-film-96,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484924+00:00
+i-49784dc2efcd1b23,ec2-sport-23,205.52.185.194,nginx,1.14.0,True,CVE-2018-16843,MEDIUM,False,Nginx Excess Memory Consumption via HTTP/2,2026-09-27T07:39:43.484929+00:00
+i-49784dc2efcd1b23,ec2-sport-23,205.52.185.194,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484931+00:00
+i-49784dc2efcd1b23,ec2-sport-23,205.52.185.194,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484933+00:00
+i-ea29130a35755ade,ec2-blue-67,218.110.119.233,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484938+00:00
+i-ea29130a35755ade,ec2-blue-67,218.110.119.233,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484940+00:00
+i-ea29130a35755ade,ec2-blue-67,218.110.119.233,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484942+00:00
+i-ea29130a35755ade,ec2-blue-67,218.110.119.233,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484944+00:00
+i-b4cd4cd5f55f945a,ec2-allow-69,None,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484948+00:00
+i-b4cd4cd5f55f945a,ec2-allow-69,None,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.484951+00:00
+i-b4cd4cd5f55f945a,ec2-allow-69,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484953+00:00
+i-b4cd4cd5f55f945a,ec2-allow-69,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484955+00:00
+i-b4cd4cd5f55f945a,ec2-allow-69,None,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484957+00:00
+i-e8b2e376bd54661b,ec2-sort-22,212.140.171.135,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484961+00:00
+i-e8b2e376bd54661b,ec2-sort-22,212.140.171.135,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484963+00:00
+i-e8b2e376bd54661b,ec2-sort-22,212.140.171.135,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484965+00:00
+i-6f8a9a4fa113e035,ec2-process-31,183.126.27.56,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484970+00:00
+i-6f8a9a4fa113e035,ec2-process-31,183.126.27.56,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484972+00:00
+i-6f8a9a4fa113e035,ec2-process-31,183.126.27.56,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484974+00:00
+i-6f8a9a4fa113e035,ec2-process-31,183.126.27.56,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484976+00:00
+i-33ab94c44205eb64,ec2-plant-61,None,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.484980+00:00
+i-33ab94c44205eb64,ec2-plant-61,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.484983+00:00
+i-33ab94c44205eb64,ec2-plant-61,None,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484985+00:00
+i-33ab94c44205eb64,ec2-plant-61,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.484987+00:00
+i-33ab94c44205eb64,ec2-plant-61,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.484989+00:00
+i-4cdb5f20208611c9,ec2-article-59,91.206.148.69,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484993+00:00
+i-4cdb5f20208611c9,ec2-article-59,91.206.148.69,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.484996+00:00
+i-4cdb5f20208611c9,ec2-article-59,91.206.148.69,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.484998+00:00
+i-4cdb5f20208611c9,ec2-article-59,91.206.148.69,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485000+00:00
+i-d8282feb1f5b5833,ec2-whole-99,210.126.13.4,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485004+00:00
+i-d8282feb1f5b5833,ec2-whole-99,210.126.13.4,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485006+00:00
+i-d8282feb1f5b5833,ec2-whole-99,210.126.13.4,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.485009+00:00
+i-d8282feb1f5b5833,ec2-whole-99,210.126.13.4,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485010+00:00
+i-d8282feb1f5b5833,ec2-whole-99,210.126.13.4,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.485013+00:00
+i-7ebf6740d07b0a0c,ec2-beyond-37,None,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485017+00:00
+i-7ebf6740d07b0a0c,ec2-beyond-37,None,apache2,2.4.49,True,CVE-2021-41773,CRITICAL,True,Apache HTTP Server Path Traversal Vulnerability,2026-09-27T07:39:43.485020+00:00
+i-7ebf6740d07b0a0c,ec2-beyond-37,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.485023+00:00
+i-7ebf6740d07b0a0c,ec2-beyond-37,None,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.485025+00:00
+i-3435eead3b6e9e83,ec2-top-17,183.254.202.243,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485029+00:00
+i-3435eead3b6e9e83,ec2-top-17,183.254.202.243,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485031+00:00
+i-3435eead3b6e9e83,ec2-top-17,183.254.202.243,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485033+00:00
+i-a31e15dcf0cd5b65,ec2-question-30,208.159.253.86,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485037+00:00
+i-a31e15dcf0cd5b65,ec2-question-30,208.159.253.86,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.485039+00:00
+i-a31e15dcf0cd5b65,ec2-question-30,208.159.253.86,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485041+00:00
+i-a31e15dcf0cd5b65,ec2-question-30,208.159.253.86,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485043+00:00
+i-77817cb557ab0b46,ec2-cost-86,None,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.485048+00:00
+i-77817cb557ab0b46,ec2-cost-86,None,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485051+00:00
+i-77817cb557ab0b46,ec2-cost-86,None,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485053+00:00
+i-b75c99450c15a73f,ec2-stop-82,35.20.217.18,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.485058+00:00
+i-b75c99450c15a73f,ec2-stop-82,35.20.217.18,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485060+00:00
+i-b75c99450c15a73f,ec2-stop-82,35.20.217.18,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485062+00:00
+i-b75c99450c15a73f,ec2-stop-82,35.20.217.18,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485064+00:00
+i-2a5c522af0d5d513,ec2-begin-63,167.175.108.212,openssl,1.1.1k,True,CVE-2021-3711,HIGH,True,OpenSSL SM2 Decryption Buffer Overflow,2026-09-27T07:39:43.485068+00:00
+i-2a5c522af0d5d513,ec2-begin-63,167.175.108.212,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.485070+00:00
+i-2a5c522af0d5d513,ec2-begin-63,167.175.108.212,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.485073+00:00
+i-18ee8781432bd71c,ec2-land-40,None,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485077+00:00
+i-18ee8781432bd71c,ec2-land-40,None,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485080+00:00
+i-18ee8781432bd71c,ec2-land-40,None,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485082+00:00
+i-18ee8781432bd71c,ec2-land-40,None,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485084+00:00
+i-3339bd8cff158c4c,ec2-first-68,218.68.141.160,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.485088+00:00
+i-3339bd8cff158c4c,ec2-first-68,218.68.141.160,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485090+00:00
+i-3339bd8cff158c4c,ec2-first-68,218.68.141.160,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485092+00:00
+i-71e1b68bec307bfe,ec2-reach-89,176.72.228.108,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485096+00:00
+i-71e1b68bec307bfe,ec2-reach-89,176.72.228.108,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485098+00:00
+i-71e1b68bec307bfe,ec2-reach-89,176.72.228.108,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485100+00:00
+i-b993f2a8a8896471,ec2-first-74,None,curl,7.68.0,True,CVE-2023-38545,HIGH,True,curl SOCKS5 Heap Buffer Overflow Vulnerability,2026-09-27T07:39:43.485104+00:00
+i-b993f2a8a8896471,ec2-first-74,None,log4j-core,2.14.1,True,CVE-2021-44228,CRITICAL,True,Apache Log4j2 Remote Code Execution Vulnerability,2026-09-27T07:39:43.485106+00:00
+i-b993f2a8a8896471,ec2-first-74,None,sudo,1.8.21,True,CVE-2021-3156,HIGH,True,Sudo Baron Samedit Heap-Based Buffer Overflow,2026-09-27T07:39:43.485109+00:00
+i-b993f2a8a8896471,ec2-first-74,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.485111+00:00
+i-b993f2a8a8896471,ec2-first-74,None,apache2,2.4.58,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485113+00:00
+i-e3f12f63c9d1446a,ec2-south-41,124.90.39.130,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485117+00:00
+i-e3f12f63c9d1446a,ec2-south-41,124.90.39.130,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485120+00:00
+i-e3f12f63c9d1446a,ec2-south-41,124.90.39.130,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485122+00:00
+i-e3f12f63c9d1446a,ec2-south-41,124.90.39.130,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485123+00:00
+i-3c952199ead4afb6,ec2-ready-79,71.105.25.191,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485128+00:00
+i-3c952199ead4afb6,ec2-ready-79,71.105.25.191,docker-ce,24.0.7,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485130+00:00
+i-3c952199ead4afb6,ec2-ready-79,71.105.25.191,nginx,1.24.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485132+00:00
+i-3c952199ead4afb6,ec2-ready-79,71.105.25.191,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485134+00:00
+i-686bd951f6fa7002,ec2-fill-48,None,openssh-server,7.4p1,True,CVE-2018-15473,HIGH,True,OpenSSH User Enumeration Vulnerability,2026-09-27T07:39:43.485138+00:00
+i-686bd951f6fa7002,ec2-fill-48,None,log4j-core,2.17.1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485140+00:00
+i-686bd951f6fa7002,ec2-fill-48,None,curl,8.4.0,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485143+00:00
+i-686bd951f6fa7002,ec2-fill-48,None,nginx,1.14.0,True,CVE-2018-16843,MEDIUM,False,Nginx Excess Memory Consumption via HTTP/2,2026-09-27T07:39:43.485145+00:00
+i-686bd951f6fa7002,ec2-fill-48,None,docker-ce,19.03.13,True,CVE-2020-13401,MEDIUM,False,Docker Engine IPv6 Rogue RA Security Bypass,2026-09-27T07:39:43.485147+00:00
+i-e8cfd534153dfe5c,ec2-recently-23,219.16.97.59,openssl,3.0.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485151+00:00
+i-e8cfd534153dfe5c,ec2-recently-23,219.16.97.59,openssh-server,9.4p1,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485164+00:00
+i-e8cfd534153dfe5c,ec2-recently-23,219.16.97.59,sudo,1.9.12,False,NONE,NONE,False,NONE,2026-09-27T07:39:43.485167+00:00
